@@ -8,20 +8,20 @@ Site da Handcode
 ``` 
 pip install virtualenv
 ```
-
 ``` 
 cd handcode
 ```
 ``` 
 virtualenv env
 ```
-
 ``` 
 source env/bin/activate
 ```
-
 ``` 
-pip install requirements.txt
+pip install -r requirements.txt
+```
+``` 
+python manage.py migrate
 ```
 
 ``` 
