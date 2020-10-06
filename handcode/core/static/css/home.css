@@ -1,0 +1,242 @@
+*{
+    font-family: 'Athiti', sans-serif;
+}
+/*  NAV BAR CSS*/
+.nav-item{
+    margin-right: 10px;
+}
+.inicio{
+    border-bottom: #440D7B solid 2px;
+    color: #440D7B;
+}
+.btn-contato {
+
+    background-color: #440D7B;
+    color: #fff;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border-radius: 23px;
+   
+}
+.btn-contato a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+   
+}
+
+.nav-link{
+    
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* FIM */
+.header{
+    background-color: #1f1e20;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  
+ 
+}
+.text-header{
+    color: #fff;
+    font-weight: bold;
+    font-size: 48px;
+}
+.col-sm-8{
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    
+    align-items: center;
+    
+}
+.btns{
+    display: flex;
+  
+    
+}
+.btns a{
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.banner{
+  width: 559px;
+  height: 60vh;
+  position: absolute;
+  top: -133px;
+  right: -103px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services{
+    background-color: #1f1e20;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.services h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+.services p {
+    color:#625C5C;
+    font-weight: bold;
+}
+.services .container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+}
+
+.services .container .row{
+    width: 100%;
+    
+    height: auto;
+}
+
+.card-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 17px;
+    width: 10px;
+    height: 200px;
+    margin: 40px;
+    color: darkblue;
+}
+
+.card-services img{
+    width: 90px;
+}
+.card-services h3{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 12px;                                                                    
+}
+
+.tecnologias{
+    background-color: #440D7B;
+    height: 100%;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.tecnologias h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.tecnologias .container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+}
+
+
+.tecnologias .container .row{
+    width: 100%;
+    
+    height: auto;
+}
+.card-tecnologias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.card-tecnologias img{
+    width: 90px;
+}
+.card-tecnologias h3{
+    font-size: 18px;
+    margin-top: 13px;
+}
+.btn-tecnologias{
+    background-color: #fff;
+    color: #440D7B;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+.parceiros{
+    background-color: #1f1e20;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.parceiros h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.parceiros .container{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+}
+
+
+.parceiros .container .row{
+    width: 100%;
+    
+    height: auto;
+}
+.card-parceiros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.card-parceiros img{
+    width: 130px;
+}
+
+@media only screen and (max-width: 768px)  { 
+    .banner{
+       display: none;
+    }
+    .center h1{
+        text-align: center;
+    }
+   
+ }
+/* Todos tamanhos de mobile */
