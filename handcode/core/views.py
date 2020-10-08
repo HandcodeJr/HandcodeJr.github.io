@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+from .models import Worker
 
 def home(request):
     return render(request,'home.html')
@@ -14,4 +15,8 @@ def services(request):
     return render(request,'services.html')
 
 def team(request):
-    return render(request,'team.html')
+    worker = Worker.objects.order_by('?').all()
+    data = {
+        'worker': worker,
+    }
+    return render(request,'team.html', data)

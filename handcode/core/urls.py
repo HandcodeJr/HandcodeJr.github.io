@@ -1,11 +1,11 @@
 from django.urls import path
 
-from core.views import home,contact,about,services,team
+from .views import home,contact,about,services,team
 
 urlpatterns = [
     path('', home, name='home'),
-    path('contact', contact, name='contact'),
-    path('about', about, name='about'),
-    path('services', services, name='services'),
-    path('team', team,  name='team'),
-]   
+    path('contato/', contact, name='contact'),
+    path('sobre-nos/', about, name='about'),
+    path('servicos/', services, name='services'),
+    path('equipe/', team,  name='team'),
+]
