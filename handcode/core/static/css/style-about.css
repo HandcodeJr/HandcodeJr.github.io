@@ -80,21 +80,6 @@ p {
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .capa {
-        width: 720px;
-        height: 370px;
-        padding-bottom: 50px;
-        position: relative;
-    }
-    .center h1 {
-        text-align: center;
-    }
-}
-
-
-/* NAV BAR*/
-
 .nav-item {
     margin-right: 10px;
 }
@@ -125,6 +110,3 @@ p {
     font-weight: bold;
     font-size: 17px;
 }
-
-
-/* FIM NAV BAR*/
