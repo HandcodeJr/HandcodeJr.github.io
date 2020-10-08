@@ -25,7 +25,7 @@ SECRET_KEY = '9872bfhjwefnwke-sdiwebq@hfiwuefwi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,6 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+<<<<<<< HEAD
 # Email
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = '1025'
@@ -131,5 +132,9 @@ EMAIL_USE_TLS = False
 
 #MEDIA_URL = '/media/'
 #MEDIA_ROOT = BASE_DIR / 'media'
+=======
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+>>>>>>> 80c0bab0f7c54c0de0b258d04a861774fae16cb1
 
 LOGOUT_REDIRECT_URL = 'index'

@@ -1,6 +1,11 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from django.contrib import messages
 from django.core.mail.message import EmailMessage
+=======
+
+from .models import Worker
+>>>>>>> 80c0bab0f7c54c0de0b258d04a861774fae16cb1
 
 def home(request):
     def send_mail(self):
@@ -27,4 +32,8 @@ def services(request):
     return render(request,'services.html')
 
 def team(request):
-    return render(request,'team.html')
+    worker = Worker.objects.order_by('?').all()
+    data = {
+        'worker': worker,
+    }
+    return render(request,'team.html', data)
