@@ -15,11 +15,11 @@
     <title>Sobre nós</title>
 </head>
 
-<body>
-    <!--NAV BAR-->
+<body class="fundo-1">
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed">
-        <div class="container">
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed fundo-2">
+        <div class="container ">
             <a class="navbar-brand" href="#">
                 <img src="{% static 'images/logo.png' %}" width="140px">
             </a>
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto menu ">
                     <li class="nav-item">
-                        <a class="nav-link  text-dark inicio" href="#">Inicio</a>
+                        <a class="nav-link  text-dark" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  text-dark" href="#">Serviços</a>
@@ -38,7 +38,7 @@
                         <a class="nav-link text-dark" href="#">Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-dark" href="#">Sobre Nós</a>
+                        <a class="nav-link text-dark sobre" href="about">Sobre Nós</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -50,31 +50,72 @@
         </div>
     </nav>
 
-    <!--CABEÇALHO-->
-    <header class="cabecalho">
+    <!--HEADER-->
+    <header>
         <div class="container">
-            <div class="centralizar">
-                <img class="capa" src="{% static 'images/capa.png' %}">
-                <h1 class="texto-cabecalho">Sobre nós</h1>
-            </div>
-
-            <div class="centralizar">
-                <h2 class="texto-titulo ">Quem somos?</h2>
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    He generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                </p>
-                <h2 class="texto-titulo">Qual o objetivo da HandCode?</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed fa ucibus nibh. Praesent eu ullamcorper massa, sed tincidunt justo. Prae sent sagittis sagittis diam nec scelerisque. Curabitur lacinia pellen tesque augue et eleifend. Phasellus dignissim
-                    ligula ut leo portti tor, vitae aliquam tellus bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam malesuada, id vestibulum purus fringilla.
-                </p>
+            <div class="row">
+                <div class="col">
+                    <img class="capa" src="{% static 'images/capa.png' %}">
+                    <h1 class="titulo-principal">Sobre nós</h1>
+                </div>
             </div>
         </div>
     </header>
 
+    <!--SELECTION-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo-secundario">Quem somos?</h1>
+
+                    <p class="texto-info">Somos a HandCode uma união de alunos matriculados em cursos de graduação em instituições de ensino superior, com o intuito de realizar projetos e serviços que contribuam para o desenvolvimento do país e de formar profissionais capacitados
+                        e comprometidos.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo-secundario">Qual o objetivo da HandCode?</h1>
+                    <p class="texto-info">É desenvolver pessoal e profissionalmente os seus membros por meio da vivência empresarial, realizando projetos e serviços na área de atuação do curso de graduação ao qual a empresa júnior for vinculada.</p>
+                </div>
+            </div>
+            <div class="centralizar">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="titulo-secundario">A HandCode busca:</h1>
+                    </div>
+                    <div class="col-4">
+                        <img class="imagem-linha" src="{% static 'images/linha.png' %}">
+                        <img class="imagem-nave" src="{% static 'images/nave.png' %}">
+                        <p>
+                            Crescimento de nossos clientes.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="imagem-linha" src="{% static 'images/linha.png' %}">
+                        <img class="imagem-nave" src="{% static 'images/nave.png' %}">
+                        <p>
+                            Inspirar mudanças.
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <img class="imagem-linha" src="{% static 'images/linha.png' %}">
+                        <img class="imagem-nave" src="{% static 'images/nave.png' %}">
+                        <p>
+                            Tranformar pessoas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--RODAPÉ-->
-    <footer></footer>
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
