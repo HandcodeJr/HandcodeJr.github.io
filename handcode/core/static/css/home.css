@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 *{
     font-family: 'Athiti', sans-serif;
 }
@@ -19,6 +22,8 @@
     align-items: center;
     height: 35px;
     border-radius: 23px;
+    border: none;
+    font-weight: bold;
    
 }
 .btn-contato a{
@@ -230,6 +235,47 @@
     width: 130px;
 }
 
+.contato{
+    background-color: #1f1e20;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 60%;
+    margin: 10px;
+    border: #440D7B 3px solid;
+    border-radius: 6px;
+    padding-left: 5px;
+    font-size: 18px;
+     
+}
+::-webkit-input-placeholder {
+    color: #1F1E20;
+    font-weight: bold;
+    text-align: center;
+ }
+.contato h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+footer{
+    
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+}
 @media only screen and (max-width: 768px)  { 
     .banner{
        display: none;
