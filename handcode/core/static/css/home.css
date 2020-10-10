@@ -65,8 +65,6 @@ html {
 }
 .btns{
     display: flex;
-  
-    
 }
 .btns a{
     margin: 5px;
