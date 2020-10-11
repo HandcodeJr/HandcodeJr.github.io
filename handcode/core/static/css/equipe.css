@@ -110,3 +110,39 @@ p {
     font-weight: bold;
     font-size: 17px;
 }
+
+#home {
+    background: #ffc107;
+    color: black;
+}
+
+.caixa{
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+    margin: 5px 15px;
+}
+
+body{
+	background-color: #1f1e20;
+}
+
+h1{
+	color: white;
+}
+
+#team i{
+	font-size: 30px;
+	color: white;
+}
+
+#team h3, h5{
+	color: white;
+}
+
+#team .card{
+	border-radius: 15px;
+	background-color: #440D7B;
+}
