@@ -315,7 +315,7 @@ footer .container .row{
 .col a{
     color: #000;
     font-size: 17px;
-    font-weight: bold;
+    
     
 }
 .row-icons{
@@ -330,6 +330,7 @@ footer .container .row{
 #copyright{
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /*  Final footer */
