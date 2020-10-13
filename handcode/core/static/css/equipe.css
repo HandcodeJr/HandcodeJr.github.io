@@ -74,3 +74,10 @@ h1{
 	border-radius: 15px;
 	background-color: #440D7B;
 }
+
+footer{
+    
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+}
