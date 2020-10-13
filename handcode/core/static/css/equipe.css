@@ -2,16 +2,7 @@
     font-family: 'Athiti', sans-serif;
 }
 
-/*FUNDO BODY*/
-.fundo-1 {
-    background-color: #1f1e20;
-}
-
 /*NAVBAR*/
-.fundo-2 {
-    background-color: white;
-}
-
 .nav-item {
     margin-right: 10px;
 }
@@ -43,7 +34,20 @@
     font-size: 17px;
 }
 
+@media only screen and (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+    .center h1 {
+        text-align: center;
+    }
+}
+
 /*CARD EQUIPE*/
+.team{
+    background-color: #1f1e20;
+    display: flex;
+}
 .caixa{
     padding: 60px 0;
     border-bottom: 1px solid #e5e5e5;
@@ -61,20 +65,21 @@ h1{
 	color: white;
 }
 
-#team i{
+.team i{
 	font-size: 30px;
 	color: white;
 }
 
-#team h3, h5{
+.team h3, h5{
 	color: white;
 }
 
-#team .card{
+.team .card{
 	border-radius: 15px;
 	background-color: #440D7B;
 }
 
+/*FOOTER*/
 footer{
     
     background-color: #fff;
