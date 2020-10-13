@@ -268,6 +268,9 @@ html {
     font-size: 30px;
     margin-bottom: 30px;
 }
+
+/* Inicio footer*/
+
 footer{
     
     background-color: #fff;
@@ -328,6 +331,8 @@ footer .container .row{
     text-align: center;
     margin-bottom: 20px;
 }
+
+/*  Final footer */
 @media only screen and (max-width: 768px)  { 
     .banner{
        display: none;
