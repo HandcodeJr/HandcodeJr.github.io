@@ -1,18 +1,20 @@
 {%load static%}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style-about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css.map' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
     <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5e8ea94c3d.js"></script>
     <title>Sobre nós</title>
 </head>
 
@@ -53,52 +55,68 @@
     </nav>
 
     <!--HEADER-->
-    <header id="header">
+    <header>
         <!--<div class="container"></div>-->
-        <img class="capa" src="{% static 'images/capa-2.png' %}">
+        <div class="center">
+            <img class="capa" src="{% static 'images/capa-2.png' %}">
+
+        </div>
         <!--<h1 class="titulo-principal">Sobre nós</h1>-->
     </header>
 
     <!--SELECTION-->
-    <section id="section">
+    <section>
         <div class="container">
             <div class="row-2">
                 <div class="col-12 p-2">
-                    <h1 class="titulo-secundario">Quem somos?</h1>
+                    <h1 class="titulo-secundario">
+                        Quem somos?
+                    </h1>
                 </div>
                 <div class="col-12">
-                    <p class="texto-info">Somos a HandCode uma união de alunos matriculados em cursos de graduação em instituições de ensino superior, com o intuito de realizar projetos e serviços que contribuam para o desenvolvimento do país e de formar profissionais capacitados
-                        e comprometidos.</p>
+                    <div class="texto-section-1">
+                        Somos a HandCode uma união de alunos matriculados em cursos de graduação em instituições de ensino superior, com o intuito de realizar projetos e serviços que contribuam para o desenvolvimento do país e de formar profissionais capacitados e comprometidos.
+                    </div>
                 </div>
             </div>
             <div class="row-2">
                 <div class="col-12 p-2">
-                    <h1 class="titulo-secundario">Qual o objetivo da HandCode?</h1>
+                    <h1 class="titulo-secundario">
+                        Qual o objetivo da HandCode?
+                    </h1>
                 </div>
                 <div class="col-12">
-                    <p class="texto-info">É desenvolver pessoal e profissionalmente os seus membros por meio da vivência empresarial, realizando projetos e serviços na área de atuação do curso de graduação ao qual a empresa júnior for vinculada.</p>
+                    <div class="texto-section-1">
+                        É desenvolver pessoal e profissionalmente os seus membros por meio da vivência empresarial, realizando projetos e serviços na área de atuação do curso de graduação ao qual a empresa júnior for vinculada.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="section">
+    <section>
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 p-2">
+                <div class="col-md-4 p-3">
                     <img class="imagem-linha" src="{% static 'images/linha.png' %}">
                     <img class="imagem-principal" src="{% static 'images/crescimento.png' %}">
-                    <p>Crescimento de<br> nossos clientes.</p>
+                    <div class="texto-section-2">
+                        Crescimento de <br> nossos clientes.
+                    </div>
                 </div>
-                <div class="col-sm-4 p-2">
+                <div class="col-md-4 p-3">
                     <img class="imagem-linha" src="{% static 'images/linha.png' %}">
                     <img class="imagem-principal" src="{% static 'images/mudanças.png' %}">
-                    <p>Inspirar <br> mudanças.</p>
+                    <div class="texto-section-2">
+                        Inspirar <br> mudanças.
+                    </div>
                 </div>
-                <div class="col-sm-4 p-2">
+                <div class="col-md-4 p-3">
                     <img class="imagem-linha" src="{% static 'images/linha.png' %}">
                     <img class="imagem-principal" src="{% static 'images/engrenagem.png' %}">
-                    <p>Tranformar <br> pessoas.</p>
+                    <div class="texto-section-2">
+                        Tranformar <br> pessoas.
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,7 +124,36 @@
 
     <!--RODAPÉ-->
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="  col-xl-2">
+                    <img href="#" class="logo-footer" src="{% static 'images/logofooter.png '%}" />
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">HandCode</b>
+                    <a href="#">Home</a>
+                    <a href="#">Serviços</a>
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">Sobre nós</b>
+                    <a href="#">Informações </a>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">Suporte</b>
+                    <a href="#">FAQ</a>
+                    <a href="#">Telefone</a>
+                </div>
+                <div class="row-icons col-xl-2">
+                    <i href="#" class="fa fa-linkedin"></i>
+                    <i href="#" class="fa fa-github"></i>
+                    <i href="#" class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div id="copyright">
+                2020 Copyright - HandCode
+            </div>
+        </div>
     </footer>
 
 </body>
