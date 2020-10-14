@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src="{% static 'images/logo.png' %}" width="140px">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +29,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto menu ">
               <li class="nav-item">
-                <a  class="nav-link  text-dark" href="#">Inicio</a>
+                <a  class="nav-link  text-dark" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  text-dark" href="#">Serviços</a>
+                <a class="nav-link  text-dark" href="/servicos/">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark equipe" href="#">Equipe</a>
+                <a class="nav-link text-dark equipe" href="/equipe/">Equipe</a>
               </li>
               <li class="nav-item"> 
-                  <a class="nav-link  text-dark" href="#">Sobre Nós</a>
+                  <a class="nav-link  text-dark" href="/sobre-nos/">Sobre Nós</a>
               </li>
             </ul> 
             <ul class="navbar-nav ml-auto">
@@ -145,7 +145,36 @@
     </section>
       
     <footer>
-      <h3>Footer</h3>
+      <div class="container">
+        <div class="row">
+          <div class="  col-xl-2">
+           <img href="/" class="logo-footer" src="{% static 'images/logofooter.png '%}"/>
+          </div>
+          <div class="col col-xl-2">
+           <b class="text-footer">HandCode</b>
+            <a href="/">Home</a>
+            <a href="/servicos/">Serviços</a>
+          </div>
+          <div class="col col-xl-2">
+           <b class="text-footer">Sobre nós</b>
+             <a href="/sobre-nos/">Informações </a>
+             <a href="#">Contato</a>
+          </div>
+          <div class="col col-xl-2">
+            <b class="text-footer">Suporte</b>
+            <a href="#">FAQ</a>
+            <a href="#">Telefone</a>
+          </div>
+          <div class="row-icons col-xl-2">
+            <i href="#" class="fa fa-linkedin"></i>
+            <i href="#" class="fa fa-github"></i>
+            <i href="#" class="fa fa-instagram"></i>
+          </div>
+        </div>
+        <div id="copyright">
+          2020 Copyright - HandCode
+        </div>
+      </div>
     </footer>
        
 </body>
