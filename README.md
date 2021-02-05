@@ -30,7 +30,7 @@ python manage.py runserver
 
 # Passos para se iniciar o projeto em sua máquina usando Windows:
 
- **![Instalar o python 3](https://www.python.org/downloads/)**
+ **[Instalar o python 3](https://www.python.org/downloads/)**
 
 ``` 
 cd handcode
