@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css.map' %}">
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
     <title>Serviços</title>
@@ -20,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light fixed">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img src="{% static 'images/logo.png' %}" width="140px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto menu ">
                     <li class="nav-item">
-                        <a class="nav-link  text-dark inicio" href="/">Inicio</a>
+                        <a class="nav-link  text-dark" href="/">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-dark" href="/servicos/">Serviços</a>
+                        <a class="nav-link  text-dark servicos" href="/servicos/">Serviços</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="/equipe/">Equipe</a>
@@ -51,37 +52,75 @@
     </nav>
     <div class="cont-card container-fluid">
         <div class="row">
-            <div class="col-12 title">Serviços</div>
+            <h3 class="col-12 title">Serviços</h3>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
-                <img class="img-fluid" src="{% static 'images/javascript.png' %}" width="100px">
-                <img class="img-fluid" src="{% static 'images/bootstrap.png' %}" width="100px">
-                <div class="col txt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet reprehenderit mollitia eius natus officia deserunt nobis saepe modi? Necessitatibus blanditiis neque repudiandae enim molestiae debitis consequatur cum sapiente?
+       
+  
+        <div class="container cartoes">
+                    
+                <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
+                    <div class="row">
+                        <img class="img-fluid" src="{% static 'images/javascript.png' %}" width="100px">
+                        <img class="img-fluid" src="{% static 'images/bootstrap.png' %}" width="100px">
+                    </div>
+                    <div class="col txt">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
-                <img class="img-fluid" src="{% static 'images/python.png' %}" width="100px">
-                <img class="img-fluid" src="{% static 'images/node.png' %}" width="100px">
-                <div class="col txt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet reprehenderit mollitia eius natus officia deserunt nobis saepe modi? Necessitatibus blanditiis neque repudiandae enim molestiae debitis consequatur cum sapiente?
+                <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
+                    <div class="row">
+                        <img class="img-fluid" src="{% static 'images/python.png' %}" width="100px">
+                        <img class="img-fluid" src="{% static 'images/node.png' %}" width="100px">
+                    </div>
+                   
+                       <div class="col txt">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
-                <img class="img-fluid" src="{% static 'images/javascript.png' %}" width="100px">
-                <img class="img-fluid" src="{% static 'images/bootstrap.png' %}" width="100px">
-                <div class="col txt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet reprehenderit mollitia eius natus officia deserunt nobis saepe modi? Necessitatibus blanditiis neque repudiandae enim molestiae debitis consequatur cum sapiente?
+                <div class="col-sm-9 col-md-10 col-lg-8 col-xl-6 cartao">
+                    <div class="row">
+                        <img class="img-fluid" src="{% static 'images/javascript.png' %}" width="100px">
+                        <img class="img-fluid" src="{% static 'images/bootstrap.png' %}" width="100px">
+                    </div>
+                   
+                    <div class="col txt">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos voluptatibus amet.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="  col-xl-2">
+                    <img href="#" class="logo-footer" src="{% static 'images/logofooter.png '%}" />
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">HandCode</b>
+                    <a href="/">Home</a>
+                    <a href="/servicos/">Serviços</a>
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">Sobre nós</b>
+                    <a href="/sobre-nos/">Informações </a>
+                    <a href="/#contato">Contato</a>
+                </div>
+                <div class="col col-xl-2">
+                    <b class="text-footer">Suporte</b>
+                    <a href="#">FAQ</a>
+                    <a href="#">Telefone</a>
+                </div>
+                <div class="row-icons col-xl-2">
+                    <i href="#" class="fa fa-linkedin"></i>
+                    <i href="#" class="fa fa-github"></i>
+                    <i href="#" class="fa fa-instagram"></i>
+                </div>
+            </div>
+            <div id="copyright">
+                2020 Copyright - HandCode
+            </div>
+        </div>
     </footer>
 </body>
 

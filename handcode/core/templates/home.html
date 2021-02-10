@@ -15,6 +15,7 @@
     <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/5e8ea94c3d.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" type="imagem/png" href="{% static 'images/favicon-1.png' %}" />
     <title>Home</title>
 </head>
@@ -47,8 +48,8 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item btn-contato">
-                        <a href="#contato">Contato</a>
+                    <li href="/#contato" class="nav-item ">
+                        <a class="btn-contato"href="/#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +60,9 @@
             <div class="row">
                 <div class="col-sm-8 col-md-12 col-lg-12 col-xl-8 ">
                     <div class="center ">
-                        <h1 class="text-header">O software que a sua empresa precisa!</h1>
+                        <h1 class="text-header animate__animated animate__bounceInLeft">O software que a sua empresa precisa!</h1>
                         <div class="btns ">
-                            <a href="#" class="btn-contato">Contrate-nos</a>
+                            <a href="/#contato" class="btn-contato">Contrate-nos</a>
                             <a href="/servicos/" class="btn-contato">Nossos serviços</a>
                         </div>
                     </div>
@@ -81,17 +82,17 @@
                     <div class="card-services  col-xl-3">
                         <img src="{%static 'images/landingPages.png' %}">
                         <h3>Landing Pages</h3>
-                        <a class="btn-contato" href="#">Saber Mais</a>
+                        <a class="btn-contato" href="/servicos/">Saber Mais</a>
                     </div>
                     <div class="card-services col-xl-3">
                         <img src="{% static 'images/aplicativos.png' %}">
                         <h3>Aplicativos</h3>
-                        <a class="btn-contato" href="#">Saber Mais</a>
+                        <a class="btn-contato" href="/servicos/">Saber Mais</a>
                     </div>
                     <div class="card-services col-xl-3">
                         <img src="{% static 'images/sistemas.png' %}">
                         <h3>Sistemas</h3>
-                        <a class="btn-contato" href="#">Saber Mais</a>
+                        <a class="btn-contato" href="/servicos/">Saber Mais</a>
                     </div>
                 </div>
             </div>
@@ -118,7 +119,7 @@
                     <h3>Node Js</h3>
                 </div>
             </div>
-            <a class="btn-tecnologias" href="#">Saber Mais</a>
+            <a class="btn-tecnologias" href="/servicos/">Saber Mais</a>
         </div>
     </section>
     <section class="parceiros">
@@ -163,13 +164,13 @@
                 </div>
                 <div class="col col-xl-2">
                     <b class="text-footer">HandCode</b>
-                    <a href="#">Home</a>
-                    <a href="#">Serviços</a>
+                    <a href="/">Home</a>
+                    <a href="/servicos/">Serviços</a>
                 </div>
                 <div class="col col-xl-2">
                     <b class="text-footer">Sobre nós</b>
-                    <a href="#">Informações </a>
-                    <a href="#">Contato</a>
+                    <a href="/sobre-nos/">Informações </a>
+                    <a href="/#contato">Contato</a>
                 </div>
                 <div class="col col-xl-2">
                     <b class="text-footer">Suporte</b>
@@ -178,8 +179,8 @@
                 </div>
                 <div class="row-icons col-xl-2">
                     <i href="#" class="fa fa-linkedin"></i>
-                    <i href="#" class="fa fa-github"></i>
-                    <i href="#" class="fa fa-instagram"></i>
+                    <i  class="fa fa-github"></i>
+                    <i href="https://www.instagram.com/handcodeej/" class="fa fa-instagram"></i>
                 </div>
             </div>
             <div id="copyright">
