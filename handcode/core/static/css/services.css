@@ -57,6 +57,7 @@
     flex-direction: column;
 }
 .cartao{
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +71,10 @@
     margin-bottom: 20px;
     
 
+}
+.cartao h3{
+    color: #fff;
+    margin-bottom: 15px;
 }
 .cartao .row img{
     margin-right: 10px;
