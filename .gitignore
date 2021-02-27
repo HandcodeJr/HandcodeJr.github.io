@@ -111,7 +111,7 @@ env.bak/
 venv.bak/
 .vscode/
 media/
-migrations/*
+migrations/
 __pycache__
 .idea
 *.*~
