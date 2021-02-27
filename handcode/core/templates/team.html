@@ -64,88 +64,34 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="{%static 'images/perfil.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                            <h3>Fulano 1</h3>
-                            <h5>Presidente</h5>
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="{%static 'images/perfil.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                            <h3>Fulano 2</h3>
-                            <h5>Diretor financeiro</h5>
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
+                {% for w in worker %}
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ w.image.thumb.url }}" alt="" class="img-fluid rounded-circle w-50 mb-3">
+                                <h3>{{ w.name}}</h3>
+                                <h5>{{ w.office}}</h5>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="{{ w.linkdin }}">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="{{ w.github }}">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="{{ w.instagram }}">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="{%static 'images/perfil.png' %}" alt="" class="img-fluid rounded-circle w-50 mb-3">
-                            <h3>Fulano 3</h3>
-                            <h5>Diretor Administrativo</h5>
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+                {% endfor %}
         </div>
     </section>
 

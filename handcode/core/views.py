@@ -4,7 +4,7 @@ from django.core.mail.message import EmailMessage
 
 from .models import Worker
 
-def send_mail(self):
+'''def send_mail(self):
             nome = self.cleaned_data['nome']
             email = self.cleaned_data['email']
             assunto = self.cleaned_data['assunto']
@@ -17,7 +17,7 @@ def send_mail(self):
                 body =conteudo,
                 from_email = handcodeej@gmail.com 
                 #headers ={'Reply-to': email}
-            )
+            )'''
 
 
 def home(request):

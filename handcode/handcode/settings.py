@@ -120,15 +120,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-# Email
+'''# Email
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = '1025'
 EMAIL_HOST_USER = 'handcondeej@gmail.com'
 EMAIL_HOST_PASSWORD= 'codigovermelho9'
 EMAIL_USE_TLS = False
-#EMAIL_USE_SSL = False
+#EMAIL_USE_SSL = False'''
 
-#MEDIA_URL = '/media/'
-#MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
-LOGOUT_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'home'
