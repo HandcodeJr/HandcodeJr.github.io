@@ -36,3 +36,6 @@ def team(request):
         'worker': worker,
     }
     return render(request,'team.html', data)
+
+def notFound(request):
+     return render(request,'notFound.html')

@@ -312,6 +312,7 @@ footer .container .row{
     color: black;
     text-decoration-line: none;
 }
+
 .col{
     display: flex;
     flex-direction: column;
@@ -321,12 +322,21 @@ footer .container .row{
 .col a{
     color: #000;
     font-size: 17px;
-    
-    
+}
+.col a:hover{
+    text-decoration: none;
+    color: #000;
 }
 .row-icons{
     display: flex;
     justify-content: center;
+}
+
+.link-icons {
+    color: #000;
+}
+.link-icons:hover{
+    color: #000;
 }
 .row-icons i{
     padding: 10px;

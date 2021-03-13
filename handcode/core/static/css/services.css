@@ -26,6 +26,10 @@
     text-decoration: none;
     
 }
+.btn-contato a:hover{
+    text-decoration-line: none;
+    color: #fff;
+}
 .nav-link{
     font-weight: bold;
     font-size: 17px;
@@ -104,9 +108,8 @@ img{
     padding-bottom: 5px;
 
 }
-
 footer{
-
+    
     background-color: #fff;
     height: 100%;
   
@@ -139,7 +142,9 @@ footer .container .row{
     font-size: 1.2em;
     font-weight: bold;
     color: black;
+    text-decoration-line: none;
 }
+
 .col{
     display: flex;
     flex-direction: column;
@@ -149,12 +154,23 @@ footer .container .row{
 .col a{
     color: #000;
     font-size: 17px;
-    
-    
+}
+.col a:hover{
+    text-decoration: none;
+    color: #000;
 }
 .row-icons{
     display: flex;
     justify-content: center;
+}
+
+.link-icons {
+    color: #000;
+
+}
+
+.link-icons:hover{
+    color: #000;
 }
 .row-icons i{
     padding: 10px;
@@ -166,6 +182,8 @@ footer .container .row{
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+/*  Final footer */
 
 @media (max-width: 575.98px) {
     .baixo{
