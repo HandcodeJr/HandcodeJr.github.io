@@ -1,8 +1,6 @@
-{%load static%}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,47 +16,40 @@
     <link rel="icon" type="imagem/png" href="{% static 'images/favicon-2.png' %}" />
     <title>Not Found</title>
 </head>
-
 <body>
-    <!--FAVICON-->
-    <link rel="icon" type="imagem/png" href="{% static 'images/favicon-1.png' %}" />
-
-    <!--NAVBAR-->
+    <!-- Nav-Bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed">
-        <div class="container ">
+        <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="{% static 'images/logo.png' %}" width="140px">
+                <img src="{% static 'images/logo.png' %}" alt="logo" width="140px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto menu ">
                     <li class="nav-item">
-                        <a class="nav-link  text-dark" href="/">Inicio</a>
+                        <a class="nav-link  text-dark inicio" href="{% url 'home' %}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-dark" href="/servicos/">Serviços</a>
+                        <a class="nav-link  text-dark" href="{% url 'services' %}">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="/equipe/">Equipe</a>
+                        <a class="nav-link text-dark" href="{% url 'team' %}">Equipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark sobre" href="/sobre-nos/">Sobre Nós</a>
+                        <a class="nav-link  text-dark" href="{% url 'about' %}">Sobre Nós</a>
                     </li>
                 </ul>
-                <br>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item btn-contato">
-                        <a href="#">Contato</a>
+                    <li class="nav-item ">
+                        <a class="btn-contato"href="/#contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!--HEADER-->
-
+    <!-- End Nav-Bar-->
 
     <!--SELECTION-->
     <section id="container">
@@ -74,16 +65,16 @@
         <div class="container">
             <div class="row">
                 <div class="  col-xl-2">
-                    <img href="#" class="logo-footer" src="{% static 'images/logofooter.png '%}" />
+                    <img href="/" class="logo-footer" src="{% static 'images/logofooter.png' %}" />
                 </div>
                 <div class="col col-xl-2">
                     <b class="text-footer">HandCode</b>
-                    <a href="#">Home</a>
-                    <a href="#">Serviços</a>
+                    <a href="{% url 'home' %">Home</a>
+                    <a href="{% url 'services' %}">Serviços</a>
                 </div>
                 <div class="col col-xl-2">
-                    <b class="text-footer">Sobre nós</b>
-                    <a href="#">Informações </a>
+                    <b class="{% url 'about' %">Sobre nós</b>
+                    <a href="{% url 'services' %">Informações </a>
                     <a href="#">Contato</a>
                 </div>
                 <div class="col col-xl-2">
@@ -91,8 +82,9 @@
                     <a href="#">Telefone</a>
                 </div>
                 <div class="row-icons col-xl-2">
-                    <a target="blank" class="link-icons"href="https://github.com/HandcodeJr"><i  class="fa fa-github"></i></a>
-                    <a target="blank" class="link-icons"href="https://www.instagram.com/handcodeej/"><i class="fa fa-instagram"></i></a>
+                   
+                    <a target="blank" class="link-icons" href="https://github.com/HandcodeJr"><i  class="fa fa-github"></i></a>
+                    <a target="blank" class="link-icons" href="https://www.instagram.com/handcodeej/"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
             <div id="copyright">
@@ -100,7 +92,5 @@
             </div>
         </div>
     </footer>
-
 </body>
-
 </html>
