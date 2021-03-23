@@ -12,6 +12,8 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js.map' %}"></script>
     <script src="{% static 'js/email.js' %}"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="{% static 'js/integration.js' %}"></script>
     <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/5e8ea94c3d.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -144,16 +146,16 @@
     <section id="contato" class="contato">
         <h3>Contato</h3>
         <div class="container">
-            <form action="{%url 'home'%}" method="POST"> {%csrf_token%}
-                <input name="name" type="text" placeholder="Nome" class="input" />
-                <input name="email" type="email" placeholder="E-mail" class="input" />
-                <textarea name="message" placeholder="Mensagem" class="input" rows="5"></textarea>
-                <input type="submit" class="btn-contato">
+            <form action="javascript:sendMail()" method="POST"> {%csrf_token%}
+                <input name="name" id="name" type="text" placeholder="Nome" class="input" />
+                <input name="email" id="email" type="email" placeholder="E-mail" class="input" />
+                <textarea name="message" id="message" placeholder="Mensagem" class="input" rows="5"></textarea>
+                <input type="submit" onclick="sendMail()" class="btn-contato">
             </form>
         </div>
     </section>
 
-<!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
